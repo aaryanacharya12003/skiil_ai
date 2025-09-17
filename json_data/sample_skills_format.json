@@ -1,0 +1,18 @@
+[
+  {
+    "Skill Category": "Soft skills",
+    "Skills": [
+      "Communication",
+      "Presentation", 
+      "Team Building"
+    ]
+  },
+  {
+    "Skill Category": "Technical skills",
+    "Skills": [
+      "Java",
+      "Spring",
+      "nodejs"
+    ]
+  }
+]

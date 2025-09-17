@@ -1,0 +1,105 @@
+[
+  {
+    "Skill Category": "Programming Languages",
+    "Skills": [
+      "Python",
+      "JavaScript",
+      "Java",
+      "C++"
+    ]
+  },
+  {
+    "Skill Category": "Technical Skills",
+    "Skills": [
+      "Machine Learning",
+      "Computer Vision",
+      "Natural Language Processing (NLP)",
+      "Data Cleaning",
+      "Data Visualization",
+      "Code Refactoring",
+      "Model Deployment",
+      "API Development",
+      "Data Analysis",
+      "Predictive Modeling",
+      "Object Detection",
+      "Text Generation",
+      "Clause Extraction",
+      "Risk Detection",
+      "Knowledge Search",
+      "Onboarding",
+      "Support",
+      "PDF Parsing",
+      "OCR",
+      "LLMOps",
+      "Multi-Agent Systems",
+      "Prompt Engineering"
+    ]
+  },
+  {
+    "Skill Category": "Frameworks & Tools",
+    "Skills": [
+      "TensorFlow",
+      "PyTorch",
+      "Keras",
+      "OpenCV",
+      "Scikit-learn",
+      "Hugging Face Transformers",
+      "YOLOv5",
+      "YOLOv8",
+      "Segment Anything",
+      "Tesseract OCR",
+      "LangChain",
+      "LlamaIndex",
+      "LangGraph",
+      "AutoGen",
+      "CrewAI",
+      "GPT-4",
+      "Claude",
+      "Mistral",
+      "FinBERT",
+      "BioGPT",
+      "Pandas",
+      "NumPy",
+      "FAISS",
+      "Weaviate",
+      "Chroma",
+      "OpenAI Embeddings",
+      "Supabase (pgvector)",
+      "Flask",
+      "Django",
+      "FastAPI",
+      "Node.js",
+      "Matplotlib",
+      "Seaborn",
+      "AWS",
+      "Azure",
+      "Google Cloud Platform (GCP)",
+      "Docker",
+      "Kubernetes",
+      "Supabase",
+      "REST APIs",
+      "NoSQL"
+    ]
+  },
+  {
+    "Skill Category": "Soft Skills",
+    "Skills": []
+  },
+  {
+    "Skill Category": "Domain Expertise",
+    "Skills": [
+      "Finance",
+      "Legal",
+      "Healthcare (implied from safety detection system)",
+      "Software Development (implied from code refactoring and codebase understanding projects)"
+    ]
+  },
+  {
+    "Skill Category": "Certifications",
+    "Skills": [
+      "Google Solutions Architect - Associate",
+      "TensorFlow Developer",
+      "Coursera: Deep Learning Specialization"
+    ]
+  }
+]

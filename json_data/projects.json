@@ -1,0 +1,91 @@
+[
+  {
+    "id": 1,
+    "name": "AI-Powered Web Application",
+    "description": "Build a modern web application with AI features including chatbot integration, user authentication, and real-time dashboard. Perfect for full-stack developers looking to integrate AI capabilities.",
+    "required_skills": [
+      "Python",
+      "JavaScript",
+      "Flask",
+      "React",
+      "AI",
+      "Machine Learning",
+      "SQL",
+      "API Development"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Data Science & Analytics Platform",
+    "description": "Create comprehensive data analytics platform with visualization dashboards, predictive modeling, and automated reporting. Ideal for data professionals and analysts.",
+    "required_skills": [
+      "Python",
+      "Data Analysis",
+      "SQL",
+      "Pandas",
+      "NumPy",
+      "Matplotlib",
+      "Tableau",
+      "Statistics",
+      "Machine Learning"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Mobile App Development Project",
+    "description": "Develop cross-platform mobile applications using React Native with features like user authentication, push notifications, and offline functionality.",
+    "required_skills": [
+      "React Native",
+      "JavaScript",
+      "Mobile Development",
+      "UI/UX",
+      "Firebase",
+      "API Integration"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Cloud-Native Microservices",
+    "description": "Design and implement scalable microservices architecture on cloud platforms with containerization, API gateways, and monitoring systems.",
+    "required_skills": [
+      "Java",
+      "Spring Boot",
+      "Docker",
+      "Kubernetes",
+      "AWS",
+      "Microservices",
+      "DevOps",
+      "API Development"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "E-commerce Platform Development",
+    "description": "Build full-featured online shopping platform with payment integration, inventory management, user reviews, and admin dashboard.",
+    "required_skills": [
+      "Java",
+      "Spring",
+      "MySQL",
+      "Payment Integration",
+      "Security",
+      "REST API",
+      "Frontend Development"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "DevOps & Infrastructure Automation",
+    "description": "Implement comprehensive CI/CD pipelines, infrastructure as code, monitoring, and automated deployment strategies for modern applications.",
+    "required_skills": [
+      "Docker",
+      "Kubernetes",
+      "AWS",
+      "DevOps",
+      "Linux",
+      "Automation",
+      "Jenkins",
+      "Terraform",
+      "Monitoring"
+    ]
+  }
+]

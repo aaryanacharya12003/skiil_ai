@@ -1,0 +1,32 @@
+[
+  {
+    "Skill Category": "Technical Skills",
+    "Skills": [
+      "Python",
+      "Java",
+      "Javascript",
+      "Sql",
+      "Node.Js",
+      "Flask",
+      "Django",
+      "Aws"
+    ]
+  },
+  {
+    "Skill Category": "Programming Languages",
+    "Skills": [
+      "Python",
+      "Java",
+      "Javascript",
+      "C++",
+      "Go",
+      "R"
+    ]
+  },
+  {
+    "Skill Category": "Soft Skills",
+    "Skills": [
+      "Creative"
+    ]
+  }
+]

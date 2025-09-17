@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Aryan Acharya",
+    "email": "aryanacharya12003@gmail.com",
+    "experience_level": "Mid",
+    "upload_date": "2025-09-17T13:14:50.192038",
+    "cv_filename": "Aryans_Cv.pdf"
+  },
+  {
+    "id": 2,
+    "name": "paypal",
+    "email": "aryanacharya12003@gmail.com",
+    "experience_level": "Mid",
+    "upload_date": "2025-09-17T17:14:17.449361",
+    "cv_filename": "Aryans_Cv.pdf"
+  },
+  {
+    "id": 3,
+    "name": "Aryan Acharya",
+    "email": "aryanacharya12003@gmail.com",
+    "experience_level": "Mid",
+    "upload_date": "2025-09-17T17:19:21.785878",
+    "cv_filename": "Aryans_Cv.pdf"
+  },
+  {
+    "id": 4,
+    "name": "paypal",
+    "email": "aryanacharya12003@gmail.com",
+    "experience_level": "Junior",
+    "upload_date": "2025-09-17T17:38:54.430826",
+    "cv_filename": "Aryans_Cv.pdf"
+  },
+  {
+    "id": 5,
+    "name": "aaryan",
+    "email": "aryanacharya12003@gmail.com",
+    "experience_level": "Junior",
+    "upload_date": "2025-09-17T17:52:17.556946",
+    "cv_filename": "Aryans_Cv.pdf"
+  }
+]

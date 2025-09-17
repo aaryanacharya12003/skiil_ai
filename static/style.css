@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#loading, #results {
+    margin-top: 20px;
+}
+
+.skill-category, .project-card {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.skill-tag {
+    background-color: #f0f0f0;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.match-score {
+    font-weight: bold;
+}
+
+.ai-reasons {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.project-card p {
+    margin-bottom: 10px;
+}
+
+.required-skills {
+    margin-top: 10px;
+}
+
+.required-skills strong {
+    display: block;
+    margin-bottom: 5px;
+}

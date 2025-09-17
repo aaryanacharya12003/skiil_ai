@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning & Development Agent</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Learning & Development Agent</h1>
+        <p>Upload your CV to extract skills and get AI-powered project recommendations!</p>
+        
+        <form id="cvForm" enctype="multipart/form-data">
+            <div class="form-group">
+                <label>Name: <input type="text" name="name" required></label>
+            </div>
+            <div class="form-group">
+                <label>Email: <input type="email" name="email" required></label>
+            </div>
+            <div class="form-group">
+                <label>Experience Level:
+                    <select name="experience_level" required>
+                        <option value="Junior">Junior (0-2 years)</option>
+                        <option value="Mid">Mid (2-5 years)</option>
+                        <option value="Senior">Senior (5+ years)</option>
+                    </select>
+                </label>
+            </div>
+            <div class="form-group">
+                <label>Upload CV (PDF or DOCX):
+                    <input type="file" name="cv_file" accept=".pdf,.doc,.docx" required>
+                </label>
+            </div>
+            <button type="submit">Upload & Extract Skills</button>
+        </form>
+        
+        <div id="loading" style="display: none;">
+            <p>Processing your CV and finding matches...</p>
+        </div>
+        
+        <div id="results" style="display: none;">
+            <h2>Extracted Skills</h2>
+            <div id="skills"></div>
+            
+            <h2>Recommended Projects</h2>
+            <div id="recommendations"></div>
+        </div>
+    </div>
+
+    <script>
+        let currentUserId = null;
+        
+        document.getElementById('cvForm').onsubmit = async function(e) {
+            e.preventDefault();
+            const form = e.target;
+            const data = new FormData(form);
+            
+            document.getElementById('loading').style.display = 'block';
+            document.getElementById('results').style.display = 'none';
+            
+            try {
+                const resp = await fetch('/upload', {
+                    method: 'POST',
+                    body: data
+                });
+                
+                if (resp.ok) {
+                    const result = await resp.json();
+                    currentUserId = result.user_id;
+                    
+                    // Display skills
+                    const skillsDiv = document.getElementById('skills');
+                    skillsDiv.innerHTML = result.skills.map(cat => 
+                        `<div class="skill-category">
+                            <h3>${cat['Skill Category']}</h3>
+                            <div class="skills-list">
+                                ${cat.Skills.map(skill => `<span class="skill-tag">${skill}</span>`).join('')}
+                            </div>
+                        </div>`
+                    ).join('');
+                    
+                    // Fetch recommendations
+                    const recResp = await fetch(`/recommendations/${currentUserId}`);
+                    if (recResp.ok) {
+                        const recData = await recResp.json();
+                        
+                        // Display recommendations with match scores
+                        const recsDiv = document.getElementById('recommendations');
+                        if (recData.recommendations.length > 0) {
+                            recsDiv.innerHTML = recData.recommendations.map(proj => {
+                                let matchInfo = '';
+                                if (proj.match_score) {
+                                    matchInfo = `<div class="match-score">Match Score: ${proj.match_score}%</div>`;
+                                }
+                                
+                                let aiReasons = '';
+                                if (proj.ai_reasons && proj.ai_reasons.length > 0) {
+                                    aiReasons = `
+                                        <div class="ai-reasons">
+                                            <strong>AI Recommendations:</strong>
+                                            <ul>
+                                                ${proj.ai_reasons.map(reason => `<li>${reason}</li>`).join('')}
+                                            </ul>
+                                        </div>
+                                    `;
+                                }
+                                
+                                return `<div class="project-card">
+                                    <div class="project-header">
+                                        <h3>${proj.name}</h3>
+                                        ${matchInfo}
+                                    </div>
+                                    <p>${proj.description}</p>
+                                    ${aiReasons}
+                                    <div class="required-skills">
+                                        <strong>Required Skills:</strong>
+                                        <div class="skills-list">
+                                            ${proj.required_skills.map(skill => `<span class="skill-tag">${skill.trim()}</span>`).join('')}
+                                        </div>
+                                    </div>
+                                </div>`;
+                            }).join('');
+                        } else {
+                            recsDiv.innerHTML = '<p>No matching projects found. Upload your CV to get personalized recommendations!</p>';
+                        }
+                    }
+                    
+                    document.getElementById('loading').style.display = 'none';
+                    document.getElementById('results').style.display = 'block';
+                } else {
+                    const error = await resp.json();
+                    alert('Error: ' + (error.error || 'Failed to process CV'));
+                    document.getElementById('loading').style.display = 'none';
+                }
+            } catch (err) {
+                alert('Network error occurred');
+                document.getElementById('loading').style.display = 'none';
+            }
+        };
+    </script>
+</body>
+</html>
