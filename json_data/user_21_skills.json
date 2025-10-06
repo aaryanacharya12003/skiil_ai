@@ -1,0 +1,87 @@
+[
+  {
+    "Skill Category": "Programming Languages",
+    "Skills": [
+      "Python",
+      "JavaScript",
+      "Java",
+      "C++"
+    ]
+  },
+  {
+    "Skill Category": "AI & Deep Learning",
+    "Skills": [
+      "Machine Learning",
+      "Deep Learning",
+      "Computer Vision (CV)",
+      "Natural Language Processing (NLP)",
+      "Object Detection (YOLOv5/YOLOv8)",
+      "Neural Networks",
+      "Supervised Learning",
+      "Multimodal AI"
+    ]
+  },
+  {
+    "Skill Category": "LLM & RAG Engineering",
+    "Skills": [
+      "Retrieval-Augmented Generation (RAG)",
+      "Prompt Engineering",
+      "Multi-Agent Systems",
+      "LangChain",
+      "LlamaIndex",
+      "LangGraph",
+      "AutoGen",
+      "Text Generation"
+    ]
+  },
+  {
+    "Skill Category": "Frameworks & Tools",
+    "Skills": [
+      "TensorFlow",
+      "PyTorch",
+      "OpenCV",
+      "Hugging Face Transformers",
+      "Scikit-learn",
+      "Keras",
+      "Segment Anything",
+      "Tesseract OCR"
+    ]
+  },
+  {
+    "Skill Category": "Cloud & MLOps/DevOps",
+    "Skills": [
+      "AWS",
+      "Google Cloud Platform (GCP)",
+      "Azure",
+      "Docker",
+      "LLMOps",
+      "Kubernetes",
+      "REST APIs",
+      "Scalable AI Deployment"
+    ]
+  },
+  {
+    "Skill Category": "Data & Backend Development",
+    "Skills": [
+      "Vector Databases (Weaviate, Chroma, FAISS)",
+      "Data Processing (Pandas, Numpy)",
+      "FastAPI",
+      "Flask / Django",
+      "NoSQL",
+      "Data Visualization (Matplotlib, Seaborn)",
+      "PDF Parsing"
+    ]
+  },
+  {
+    "Skill Category": "Domain Expertise & Certifications",
+    "Skills": [
+      "Google Solutions Architect - Associate",
+      "TensorFlow Developer Certification",
+      "Contract Intelligence / Legal Tech",
+      "Financial Analysis & Audit",
+      "Real-time AI Solutions",
+      "Code Refactoring & Developer Productivity",
+      "Workplace Safety Monitoring"
+    ]
+  }
+]

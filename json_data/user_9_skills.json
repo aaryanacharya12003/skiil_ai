@@ -1,0 +1,43 @@
+[
+  {
+    "Skill Category": "Technical Skills",
+    "Skills": [
+      "Tensorflow",
+      "Machine Learning",
+      "Aws",
+      "Pytorch",
+      "Flask",
+      "Python",
+      "Sql",
+      "Deep Learning",
+      "Html",
+      "Pandas"
+    ]
+  },
+  {
+    "Skill Category": "Programming Languages",
+    "Skills": [
+      "Python",
+      "R"
+    ]
+  },
+  {
+    "Skill Category": "Frameworks & Tools",
+    "Skills": [
+      "Tensorflow",
+      "Pytorch",
+      "Flask",
+      "Pandas",
+      "Django",
+      "Mongodb",
+      "Numpy"
+    ]
+  },
+  {
+    "Skill Category": "Soft Skills",
+    "Skills": [
+      "Collaboration",
+      "Training"
+    ]
+  }
+]

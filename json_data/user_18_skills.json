@@ -1,0 +1,100 @@
+[
+  {
+    "Skill Category": "Programming Languages",
+    "Skills": [
+      "Python",
+      "JavaScript",
+      "Java",
+      "C++"
+    ]
+  },
+  {
+    "Skill Category": "Technical Skills (Core AI/ML)",
+    "Skills": [
+      "Machine Learning",
+      "Computer Vision (CV)",
+      "Natural Language Processing (NLP)",
+      "Deep Learning",
+      "Supervised Learning",
+      "Neural Networks",
+      "Object Detection",
+      "Multimodal AI"
+    ]
+  },
+  {
+    "Skill Category": "LLM & RAG Frameworks",
+    "Skills": [
+      "LangChain",
+      "LlamaIndex",
+      "RAG Systems (Retrieval-Augmented Generation)",
+      "Prompt Engineering",
+      "LangGraph",
+      "AutoGen",
+      "CrewAI",
+      "Multi-Agent Systems"
+    ]
+  },
+  {
+    "Skill Category": "AI/ML Frameworks & Libraries",
+    "Skills": [
+      "TensorFlow",
+      "PyTorch",
+      "Keras",
+      "OpenCV",
+      "Scikit-learn",
+      "Hugging Face Transformers",
+      "YOLOv8",
+      "Segment Anything"
+    ]
+  },
+  {
+    "Skill Category": "Cloud, DevOps & Infrastructure",
+    "Skills": [
+      "AWS",
+      "Google Cloud Platform (GCP)",
+      "Azure",
+      "Docker",
+      "Kubernetes",
+      "LLMOps",
+      "Scalable AI Deployment",
+      "REST APIs"
+    ]
+  },
+  {
+    "Skill Category": "Data & Backend Technologies",
+    "Skills": [
+      "FastAPI",
+      "Django",
+      "Flask",
+      "Node.js",
+      "Pandas",
+      "Numpy",
+      "Matplotlib",
+      "Data Cleaning"
+    ]
+  },
+  {
+    "Skill Category": "Vector Databases & Tooling",
+    "Skills": [
+      "Weaviate",
+      "Chroma",
+      "FAISS",
+      "Supabase (pgvector)",
+      "Tesseract OCR",
+      "PDF Parsing",
+      "NoSQL"
+    ]
+  },
+  {
+    "Skill Category": "Domain Expertise & Certifications",
+    "Skills": [
+      "Contract Intelligence (Legal/Finance)",
+      "FinTech Analysis (FinBERT)",
+      "Smart Surveillance Systems",
+      "Developer Productivity Tools (Code RAG)",
+      "Google Solutions Architect (Associate Certification)",
+      "TensorFlow Developer (Certification)",
+      "Deep Learning Specialization (Certification)"
+    ]
+  }
+]

@@ -1,0 +1,82 @@
+[
+  {
+    "Skill Category": "Programming Languages",
+    "Skills": [
+      "Python",
+      "JavaScript",
+      "Java",
+      "C++"
+    ]
+  },
+  {
+    "Skill Category": "Technical Skills & Concepts",
+    "Skills": [
+      "Machine Learning",
+      "Natural Language Processing (NLP)",
+      "Computer Vision (CV)",
+      "Deep Learning",
+      "Retrieval-Augmented Generation (RAG)",
+      "Multi-Agent Systems",
+      "Prompt Engineering",
+      "LLMOps",
+      "Neural Networks",
+      "Supervised Learning"
+    ]
+  },
+  {
+    "Skill Category": "Frameworks & AI Tooling",
+    "Skills": [
+      "TensorFlow",
+      "PyTorch",
+      "LangChain",
+      "LlamaIndex",
+      "OpenCV",
+      "YOLOv8",
+      "Hugging Face Transformers",
+      "GPT-4 (and variants)",
+      "Tesseract OCR",
+      "Scikit-learn"
+    ]
+  },
+  {
+    "Skill Category": "Cloud & Infrastructure",
+    "Skills": [
+      "AWS (Amazon Web Services)",
+      "Google Cloud Platform (GCP)",
+      "Docker",
+      "Kubernetes",
+      "FastAPI",
+      "REST API Development",
+      "Scalable AI Deployment",
+      "Backend Development (Flask/Django)",
+      "Azure",
+      "NoSQL"
+    ]
+  },
+  {
+    "Skill Category": "Data Engineering & Databases",
+    "Skills": [
+      "Pandas",
+      "Numpy",
+      "Data Cleaning",
+      "PDF Parsing",
+      "Vector Databases (Weaviate/Chroma/FAISS)",
+      "Matplotlib",
+      "Seaborn",
+      "OpenAI Embeddings"
+    ]
+  },
+  {
+    "Skill Category": "Domain Expertise & Certifications",
+    "Skills": [
+      "Google Solutions Architect Certification",
+      "TensorFlow Developer Certification",
+      "Financial AI Automation (FinBERT)",
+      "Legal Tech Automation (Contract Intelligence)",
+      "Developer Productivity (Code RAG)",
+      "Smart Surveillance Systems",
+      "Real-time System Development",
+      "Multimodal AI Integration"
+    ]
+  }
+]

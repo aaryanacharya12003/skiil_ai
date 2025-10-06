@@ -1,0 +1,69 @@
+[
+  {
+    "Skill Category": "Programming Languages",
+    "Skills": [
+      "Python",
+      "JavaScript",
+      "Java",
+      "C++"
+    ]
+  },
+  {
+    "Skill Category": "Technical Skills",
+    "Skills": [
+      "Artificial Intelligence Engineering",
+      "Computer Vision",
+      "Natural Language Processing",
+      "Retrieval-Augmented Generation (RAG)",
+      "Prompt Engineering",
+      "LLM Pipeline Development",
+      "AI Deployment",
+      "Predictive Analytics",
+      "Data Cleaning",
+      "Multi-Agent System Design"
+    ]
+  },
+  {
+    "Skill Category": "Frameworks & Tools",
+    "Skills": [
+      "TensorFlow",
+      "PyTorch",
+      "OpenCV",
+      "LangChain",
+      "LlamaIndex",
+      "Hugging Face Transformers",
+      "Docker",
+      "AWS",
+      "FastAPI",
+      "OpenAI"
+    ]
+  },
+  {
+    "Skill Category": "Soft Skills",
+    "Skills": [
+      "Problem Solving",
+      "Innovation",
+      "Solution Development",
+      "Project Execution",
+      "User-Centric Design",
+      "Business Acumen",
+      "Efficiency Improvement",
+      "Technical Leadership",
+      "Analytical Thinking"
+    ]
+  },
+  {
+    "Skill Category": "Domain Expertise",
+    "Skills": [
+      "Cloud Architecture",
+      "Fintech",
+      "Legal Technology",
+      "Knowledge Management",
+      "Smart Surveillance",
+      "Code Intelligence",
+      "Workplace Safety Systems",
+      "AI Product Development",
+      "Data Science"
+    ]
+  }
+]

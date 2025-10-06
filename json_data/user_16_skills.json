@@ -1,0 +1,67 @@
+[
+  {
+    "Skill Category": "Programming Languages",
+    "Skills": [
+      "Python",
+      "JavaScript",
+      "Java",
+      "C++"
+    ]
+  },
+  {
+    "Skill Category": "Technical Skills",
+    "Skills": [
+      "Artificial Intelligence",
+      "Machine Learning",
+      "Deep Learning",
+      "Natural Language Processing (NLP)",
+      "Computer Vision",
+      "Retrieval-Augmented Generation (RAG)",
+      "Object Detection",
+      "Predictive Modeling",
+      "Prompt Engineering",
+      "LLMOps"
+    ]
+  },
+  {
+    "Skill Category": "Frameworks & Tools",
+    "Skills": [
+      "TensorFlow",
+      "PyTorch",
+      "OpenCV",
+      "LangChain",
+      "Large Language Models (e.g., GPT-4, Claude)",
+      "Vector Databases (e.g., Weaviate, FAISS)",
+      "AWS",
+      "Google Cloud Platform (GCP)",
+      "Docker",
+      "Pandas"
+    ]
+  },
+  {
+    "Skill Category": "Soft Skills",
+    "Skills": [
+      "Problem Solving",
+      "Analytical Thinking",
+      "Innovation",
+      "Communication",
+      "Collaboration",
+      "Adaptability"
+    ]
+  },
+  {
+    "Skill Category": "Domain Expertise",
+    "Skills": [
+      "AI Engineering",
+      "Cloud Architecture",
+      "Financial Technology",
+      "Legal Technology",
+      "Workplace Safety",
+      "Knowledge Management Systems",
+      "Developer Productivity",
+      "Smart Surveillance",
+      "Google Solutions Architect",
+      "TensorFlow Development"
+    ]
+  }
+]

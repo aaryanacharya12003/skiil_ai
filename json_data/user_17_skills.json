@@ -1,0 +1,74 @@
+[
+  {
+    "Skill Category": "Programming Languages",
+    "Skills": [
+      "Python",
+      "C++",
+      "Java",
+      "JavaScript"
+    ]
+  },
+  {
+    "Skill Category": "AI/ML Technical Competencies",
+    "Skills": [
+      "Machine Learning (ML)",
+      "Natural Language Processing (NLP)",
+      "Computer Vision (CV)",
+      "Deep Learning",
+      "Retrieval-Augmented Generation (RAG)",
+      "LLMOps",
+      "Multi-Modal AI Integration",
+      "Real-Time Systems Development"
+    ]
+  },
+  {
+    "Skill Category": "AI/LLM Frameworks & Models",
+    "Skills": [
+      "TensorFlow",
+      "PyTorch",
+      "LangChain",
+      "LlamaIndex",
+      "YOLOv8/YOLOv5",
+      "GPT-4/Claude/Mistral (LLM Usage)",
+      "Hugging Face Transformers",
+      "Scikit-learn"
+    ]
+  },
+  {
+    "Skill Category": "Data & Backend Infrastructure",
+    "Skills": [
+      "FastAPI",
+      "REST API Development",
+      "Vector Databases (Weaviate, Chroma, FAISS)",
+      "Docker",
+      "NoSQL",
+      "Pandas",
+      "Numpy",
+      "Matplotlib/Seaborn"
+    ]
+  },
+  {
+    "Skill Category": "Cloud & DevOps",
+    "Skills": [
+      "AWS",
+      "Google Cloud Platform (GCP)",
+      "Azure",
+      "Kubernetes",
+      "Scalable AI Deployment",
+      "Google Solutions Architect - Associate",
+      "LLMOps"
+    ]
+  },
+  {
+    "Skill Category": "Domain Expertise & Algorithms",
+    "Skills": [
+      "Financial Intelligence & Parsing (FinBERT)",
+      "Legal Tech & Contract Analysis",
+      "Workplace Safety Systems",
+      "Knowledge Management Systems",
+      "Object Detection",
+      "Prompt Engineering",
+      "Multi-Agent Systems (CrewAI, AutoGen)"
+    ]
+  }
+]

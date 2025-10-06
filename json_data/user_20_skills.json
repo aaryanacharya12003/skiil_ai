@@ -1,0 +1,79 @@
+[
+  {
+    "Skill Category": "Programming Languages",
+    "Skills": [
+      "Python",
+      "JavaScript",
+      "Java",
+      "C++"
+    ]
+  },
+  {
+    "Skill Category": "Technical Skills",
+    "Skills": [
+      "Machine Learning (ML)",
+      "Natural Language Processing (NLP)",
+      "Computer Vision (CV)",
+      "Deep Learning",
+      "Retrieval-Augmented Generation (RAG)",
+      "Prompt Engineering",
+      "LLMOps",
+      "Multi-Agent Systems",
+      "Object Detection",
+      "Data Cleaning"
+    ]
+  },
+  {
+    "Skill Category": "Frameworks & Tools",
+    "Skills": [
+      "TensorFlow",
+      "PyTorch",
+      "LangChain",
+      "LlamaIndex",
+      "YOLOv8",
+      "OpenCV",
+      "Docker",
+      "FastAPI",
+      "Weaviate (Vector Database)",
+      "Pandas"
+    ]
+  },
+  {
+    "Skill Category": "Soft Skills",
+    "Skills": [
+      "Solution Development",
+      "Problem Solving",
+      "Technical Communication (English)",
+      "Cross-functional Collaboration",
+      "Scalability Engineering",
+      "Adaptability",
+      "Code Refactoring"
+    ]
+  },
+  {
+    "Skill Category": "Domain Expertise & Certifications",
+    "Skills": [
+      "AI Engineering",
+      "Cloud Computing",
+      "Financial Analysis",
+      "Legal Tech (Contract Intelligence)",
+      "Smart Surveillance",
+      "Google Solutions Architect - Associate",
+      "TensorFlow Developer",
+      "Deep Learning Specialization"
+    ]
+  },
+  {
+    "Skill Category": "Cloud & DevOps",
+    "Skills": [
+      "AWS",
+      "Google Cloud Platform (GCP)",
+      "Azure",
+      "Kubernetes",
+      "Docker",
+      "REST APIs",
+      "NoSQL",
+      "LLMOps"
+    ]
+  }
+]

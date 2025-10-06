@@ -256,5 +256,1139 @@
       }
     ],
     "extraction_date": "2025-09-17T17:52:17.557936"
+  },
+  {
+    "user_id": 6,
+    "user_name": "Aryan Acharya",
+    "skills_data": [
+      {
+        "Skill Category": "Technical Skills",
+        "Skills": [
+          "Azure",
+          "Kubernetes",
+          "Tensorflow",
+          "Machine Learning",
+          "Pytorch",
+          "Aws",
+          "Java",
+          "Javascript",
+          "Flask",
+          "Python"
+        ]
+      },
+      {
+        "Skill Category": "Programming Languages",
+        "Skills": [
+          "Python",
+          "Java",
+          "Javascript"
+        ]
+      },
+      {
+        "Skill Category": "Frameworks & Tools",
+        "Skills": [
+          "Kubernetes",
+          "Tensorflow",
+          "Pytorch",
+          "Flask",
+          "Docker",
+          "Pandas",
+          "Django",
+          "Numpy",
+          "Scikit-Learn"
+        ]
+      },
+      {
+        "Skill Category": "Soft Skills",
+        "Skills": [
+          "Creative"
+        ]
+      }
+    ],
+    "extraction_date": "2025-10-06T16:49:02.705125"
+  },
+  {
+    "user_id": 7,
+    "user_name": "Aryan Acharya",
+    "skills_data": [
+      {
+        "Skill Category": "Technical Skills",
+        "Skills": [
+          "Azure",
+          "Kubernetes",
+          "Tensorflow",
+          "Machine Learning",
+          "Pytorch",
+          "Aws",
+          "Java",
+          "Javascript",
+          "Flask",
+          "Python"
+        ]
+      },
+      {
+        "Skill Category": "Programming Languages",
+        "Skills": [
+          "Python",
+          "Java",
+          "Javascript"
+        ]
+      },
+      {
+        "Skill Category": "Frameworks & Tools",
+        "Skills": [
+          "Kubernetes",
+          "Tensorflow",
+          "Pytorch",
+          "Flask",
+          "Docker",
+          "Pandas",
+          "Django",
+          "Numpy",
+          "Scikit-Learn"
+        ]
+      },
+      {
+        "Skill Category": "Soft Skills",
+        "Skills": [
+          "Creative"
+        ]
+      }
+    ],
+    "extraction_date": "2025-10-06T16:50:52.347827"
+  },
+  {
+    "user_id": 8,
+    "user_name": "Aryan Acharya",
+    "skills_data": [
+      {
+        "Skill Category": "Technical Skills",
+        "Skills": [
+          "Azure",
+          "Kubernetes",
+          "Tensorflow",
+          "Machine Learning",
+          "Pytorch",
+          "Aws",
+          "Java",
+          "Javascript",
+          "Flask",
+          "Python"
+        ]
+      },
+      {
+        "Skill Category": "Programming Languages",
+        "Skills": [
+          "Python",
+          "Java",
+          "Javascript"
+        ]
+      },
+      {
+        "Skill Category": "Frameworks & Tools",
+        "Skills": [
+          "Kubernetes",
+          "Tensorflow",
+          "Pytorch",
+          "Flask",
+          "Docker",
+          "Pandas",
+          "Django",
+          "Numpy",
+          "Scikit-Learn"
+        ]
+      },
+      {
+        "Skill Category": "Soft Skills",
+        "Skills": [
+          "Creative"
+        ]
+      }
+    ],
+    "extraction_date": "2025-10-06T16:51:21.464335"
+  },
+  {
+    "user_id": 9,
+    "user_name": "Aryan Acharya",
+    "skills_data": [
+      {
+        "Skill Category": "Technical Skills",
+        "Skills": [
+          "Tensorflow",
+          "Machine Learning",
+          "Aws",
+          "Pytorch",
+          "Flask",
+          "Python",
+          "Sql",
+          "Deep Learning",
+          "Html",
+          "Pandas"
+        ]
+      },
+      {
+        "Skill Category": "Programming Languages",
+        "Skills": [
+          "Python",
+          "R"
+        ]
+      },
+      {
+        "Skill Category": "Frameworks & Tools",
+        "Skills": [
+          "Tensorflow",
+          "Pytorch",
+          "Flask",
+          "Pandas",
+          "Django",
+          "Mongodb",
+          "Numpy"
+        ]
+      },
+      {
+        "Skill Category": "Soft Skills",
+        "Skills": [
+          "Collaboration",
+          "Training"
+        ]
+      }
+    ],
+    "extraction_date": "2025-10-06T16:52:06.810558"
+  },
+  {
+    "user_id": 10,
+    "user_name": "Aryan Acharya",
+    "skills_data": [
+      {
+        "Skill Category": "Technical Skills",
+        "Skills": [
+          "Azure",
+          "Kubernetes",
+          "Tensorflow",
+          "Machine Learning",
+          "Pytorch",
+          "Aws",
+          "Java",
+          "Javascript",
+          "Flask",
+          "Python"
+        ]
+      },
+      {
+        "Skill Category": "Programming Languages",
+        "Skills": [
+          "Python",
+          "Java",
+          "Javascript"
+        ]
+      },
+      {
+        "Skill Category": "Frameworks & Tools",
+        "Skills": [
+          "Kubernetes",
+          "Tensorflow",
+          "Pytorch",
+          "Flask",
+          "Docker",
+          "Pandas",
+          "Django",
+          "Numpy",
+          "Scikit-Learn"
+        ]
+      },
+      {
+        "Skill Category": "Soft Skills",
+        "Skills": [
+          "Creative"
+        ]
+      }
+    ],
+    "extraction_date": "2025-10-06T16:56:32.203721"
+  },
+  {
+    "user_id": 11,
+    "user_name": "Aryan Acharya",
+    "skills_data": [
+      {
+        "Skill Category": "Technical Skills",
+        "Skills": [
+          "Aws",
+          "Machine Learning",
+          "Django",
+          "Numpy",
+          "Kubernetes",
+          "Python",
+          "Gcp",
+          "Flask",
+          "Azure",
+          "Deep Learning"
+        ]
+      },
+      {
+        "Skill Category": "Programming Languages",
+        "Skills": [
+          "Javascript",
+          "Python",
+          "Java"
+        ]
+      },
+      {
+        "Skill Category": "Frameworks & Tools",
+        "Skills": [
+          "Django",
+          "Numpy",
+          "Kubernetes",
+          "Flask",
+          "Pytorch",
+          "Docker",
+          "Pandas",
+          "Tensorflow",
+          "Scikit-Learn"
+        ]
+      },
+      {
+        "Skill Category": "Soft Skills",
+        "Skills": [
+          "Creative"
+        ]
+      }
+    ],
+    "extraction_date": "2025-10-06T16:58:25.364122"
+  },
+  {
+    "user_id": 12,
+    "user_name": "Aryan Acharya",
+    "skills_data": [
+      {
+        "Skill Category": "Technical Skills",
+        "Skills": [
+          "Java",
+          "Gcp",
+          "Python",
+          "Pytorch",
+          "Django",
+          "Aws",
+          "Azure",
+          "Javascript",
+          "Numpy",
+          "Deep Learning"
+        ]
+      },
+      {
+        "Skill Category": "Programming Languages",
+        "Skills": [
+          "Python",
+          "Java",
+          "Javascript"
+        ]
+      },
+      {
+        "Skill Category": "Frameworks & Tools",
+        "Skills": [
+          "Scikit-Learn",
+          "Django",
+          "Pytorch",
+          "Numpy",
+          "Tensorflow",
+          "Pandas",
+          "Flask",
+          "Kubernetes",
+          "Docker"
+        ]
+      },
+      {
+        "Skill Category": "Soft Skills",
+        "Skills": [
+          "Creative"
+        ]
+      }
+    ],
+    "extraction_date": "2025-10-06T17:01:11.304938"
+  },
+  {
+    "user_id": 13,
+    "user_name": "Aryan Acharya",
+    "skills_data": [
+      {
+        "Skill Category": "Technical Skills",
+        "Skills": [
+          "Java",
+          "Gcp",
+          "Python",
+          "Pytorch",
+          "Django",
+          "Aws",
+          "Azure",
+          "Javascript",
+          "Numpy",
+          "Deep Learning"
+        ]
+      },
+      {
+        "Skill Category": "Programming Languages",
+        "Skills": [
+          "Python",
+          "Java",
+          "Javascript"
+        ]
+      },
+      {
+        "Skill Category": "Frameworks & Tools",
+        "Skills": [
+          "Scikit-Learn",
+          "Django",
+          "Pytorch",
+          "Numpy",
+          "Tensorflow",
+          "Pandas",
+          "Flask",
+          "Kubernetes",
+          "Docker"
+        ]
+      },
+      {
+        "Skill Category": "Soft Skills",
+        "Skills": [
+          "Creative"
+        ]
+      }
+    ],
+    "extraction_date": "2025-10-06T17:01:56.505737"
+  },
+  {
+    "user_id": 14,
+    "user_name": "Aryan Acharya",
+    "skills_data": [
+      {
+        "Skill Category": "Programming Languages",
+        "Skills": [
+          "Python",
+          "JavaScript",
+          "Java",
+          "C++"
+        ]
+      },
+      {
+        "Skill Category": "Technical Skills",
+        "Skills": [
+          "Artificial Intelligence Engineering",
+          "Computer Vision",
+          "Natural Language Processing",
+          "Retrieval-Augmented Generation (RAG)",
+          "Prompt Engineering",
+          "LLM Pipeline Development",
+          "AI Deployment",
+          "Predictive Analytics",
+          "Data Cleaning",
+          "Multi-Agent System Design"
+        ]
+      },
+      {
+        "Skill Category": "Frameworks & Tools",
+        "Skills": [
+          "TensorFlow",
+          "PyTorch",
+          "OpenCV",
+          "LangChain",
+          "LlamaIndex",
+          "Hugging Face Transformers",
+          "Docker",
+          "AWS",
+          "FastAPI",
+          "OpenAI"
+        ]
+      },
+      {
+        "Skill Category": "Soft Skills",
+        "Skills": [
+          "Problem Solving",
+          "Innovation",
+          "Solution Development",
+          "Project Execution",
+          "User-Centric Design",
+          "Business Acumen",
+          "Efficiency Improvement",
+          "Technical Leadership",
+          "Analytical Thinking"
+        ]
+      },
+      {
+        "Skill Category": "Domain Expertise",
+        "Skills": [
+          "Cloud Architecture",
+          "Fintech",
+          "Legal Technology",
+          "Knowledge Management",
+          "Smart Surveillance",
+          "Code Intelligence",
+          "Workplace Safety Systems",
+          "AI Product Development",
+          "Data Science"
+        ]
+      }
+    ],
+    "extraction_date": "2025-10-06T18:12:02.216691"
+  },
+  {
+    "user_id": 15,
+    "user_name": "Aryan Acharya",
+    "skills_data": [
+      {
+        "Skill Category": "Programming Languages",
+        "Skills": [
+          "Python",
+          "JavaScript",
+          "Java",
+          "C++"
+        ]
+      },
+      {
+        "Skill Category": "Technical Skills",
+        "Skills": [
+          "Artificial Intelligence Engineering",
+          "Machine Learning Development",
+          "Deep Learning Architectures",
+          "Computer Vision",
+          "Natural Language Processing (NLP)",
+          "Retrieval-Augmented Generation (RAG)",
+          "Prompt Engineering",
+          "Real-time AI Solutions",
+          "Scalable System Design",
+          "Data Structures & Algorithms"
+        ]
+      },
+      {
+        "Skill Category": "Frameworks & Tools",
+        "Skills": [
+          "TensorFlow",
+          "PyTorch",
+          "LangChain",
+          "LlamaIndex",
+          "Docker",
+          "AWS",
+          "Google Cloud Platform (GCP)",
+          "FastAPI",
+          "GPT-4",
+          "Hugging Face Transformers"
+        ]
+      },
+      {
+        "Skill Category": "Soft Skills",
+        "Skills": [
+          "Analytical Thinking",
+          "Problem Solving",
+          "Technical Communication",
+          "Collaboration",
+          "Innovation",
+          "Solution Design",
+          "Adaptability"
+        ]
+      },
+      {
+        "Skill Category": "Domain Expertise & Certifications",
+        "Skills": [
+          "AI Engineering",
+          "Machine Learning Engineering",
+          "Cloud Architecture",
+          "Deep Learning",
+          "Legal Technology",
+          "Financial Technology",
+          "Smart Surveillance",
+          "Knowledge Management",
+          "Developer Productivity",
+          "Multilingual Proficiency"
+        ]
+      }
+    ],
+    "extraction_date": "2025-10-06T18:12:04.800852"
+  },
+  {
+    "user_id": 16,
+    "user_name": "Aryan Acharya",
+    "skills_data": [
+      {
+        "Skill Category": "Programming Languages",
+        "Skills": [
+          "Python",
+          "JavaScript",
+          "Java",
+          "C++"
+        ]
+      },
+      {
+        "Skill Category": "Technical Skills",
+        "Skills": [
+          "Artificial Intelligence",
+          "Machine Learning",
+          "Deep Learning",
+          "Natural Language Processing (NLP)",
+          "Computer Vision",
+          "Retrieval-Augmented Generation (RAG)",
+          "Object Detection",
+          "Predictive Modeling",
+          "Prompt Engineering",
+          "LLMOps"
+        ]
+      },
+      {
+        "Skill Category": "Frameworks & Tools",
+        "Skills": [
+          "TensorFlow",
+          "PyTorch",
+          "OpenCV",
+          "LangChain",
+          "Large Language Models (e.g., GPT-4, Claude)",
+          "Vector Databases (e.g., Weaviate, FAISS)",
+          "AWS",
+          "Google Cloud Platform (GCP)",
+          "Docker",
+          "Pandas"
+        ]
+      },
+      {
+        "Skill Category": "Soft Skills",
+        "Skills": [
+          "Problem Solving",
+          "Analytical Thinking",
+          "Innovation",
+          "Communication",
+          "Collaboration",
+          "Adaptability"
+        ]
+      },
+      {
+        "Skill Category": "Domain Expertise",
+        "Skills": [
+          "AI Engineering",
+          "Cloud Architecture",
+          "Financial Technology",
+          "Legal Technology",
+          "Workplace Safety",
+          "Knowledge Management Systems",
+          "Developer Productivity",
+          "Smart Surveillance",
+          "Google Solutions Architect",
+          "TensorFlow Development"
+        ]
+      }
+    ],
+    "extraction_date": "2025-10-06T18:12:43.242636"
+  },
+  {
+    "user_id": 17,
+    "user_name": "Aryan Acharya",
+    "skills_data": [
+      {
+        "Skill Category": "Programming Languages",
+        "Skills": [
+          "Python",
+          "C++",
+          "Java",
+          "JavaScript"
+        ]
+      },
+      {
+        "Skill Category": "AI/ML Technical Competencies",
+        "Skills": [
+          "Machine Learning (ML)",
+          "Natural Language Processing (NLP)",
+          "Computer Vision (CV)",
+          "Deep Learning",
+          "Retrieval-Augmented Generation (RAG)",
+          "LLMOps",
+          "Multi-Modal AI Integration",
+          "Real-Time Systems Development"
+        ]
+      },
+      {
+        "Skill Category": "AI/LLM Frameworks & Models",
+        "Skills": [
+          "TensorFlow",
+          "PyTorch",
+          "LangChain",
+          "LlamaIndex",
+          "YOLOv8/YOLOv5",
+          "GPT-4/Claude/Mistral (LLM Usage)",
+          "Hugging Face Transformers",
+          "Scikit-learn"
+        ]
+      },
+      {
+        "Skill Category": "Data & Backend Infrastructure",
+        "Skills": [
+          "FastAPI",
+          "REST API Development",
+          "Vector Databases (Weaviate, Chroma, FAISS)",
+          "Docker",
+          "NoSQL",
+          "Pandas",
+          "Numpy",
+          "Matplotlib/Seaborn"
+        ]
+      },
+      {
+        "Skill Category": "Cloud & DevOps",
+        "Skills": [
+          "AWS",
+          "Google Cloud Platform (GCP)",
+          "Azure",
+          "Kubernetes",
+          "Scalable AI Deployment",
+          "Google Solutions Architect - Associate",
+          "LLMOps"
+        ]
+      },
+      {
+        "Skill Category": "Domain Expertise & Algorithms",
+        "Skills": [
+          "Financial Intelligence & Parsing (FinBERT)",
+          "Legal Tech & Contract Analysis",
+          "Workplace Safety Systems",
+          "Knowledge Management Systems",
+          "Object Detection",
+          "Prompt Engineering",
+          "Multi-Agent Systems (CrewAI, AutoGen)"
+        ]
+      }
+    ],
+    "extraction_date": "2025-10-06T18:19:56.293761"
+  },
+  {
+    "user_id": 18,
+    "user_name": "Aryan Acharya",
+    "skills_data": [
+      {
+        "Skill Category": "Programming Languages",
+        "Skills": [
+          "Python",
+          "JavaScript",
+          "Java",
+          "C++"
+        ]
+      },
+      {
+        "Skill Category": "Technical Skills (Core AI/ML)",
+        "Skills": [
+          "Machine Learning",
+          "Computer Vision (CV)",
+          "Natural Language Processing (NLP)",
+          "Deep Learning",
+          "Supervised Learning",
+          "Neural Networks",
+          "Object Detection",
+          "Multimodal AI"
+        ]
+      },
+      {
+        "Skill Category": "LLM & RAG Frameworks",
+        "Skills": [
+          "LangChain",
+          "LlamaIndex",
+          "RAG Systems (Retrieval-Augmented Generation)",
+          "Prompt Engineering",
+          "LangGraph",
+          "AutoGen",
+          "CrewAI",
+          "Multi-Agent Systems"
+        ]
+      },
+      {
+        "Skill Category": "AI/ML Frameworks & Libraries",
+        "Skills": [
+          "TensorFlow",
+          "PyTorch",
+          "Keras",
+          "OpenCV",
+          "Scikit-learn",
+          "Hugging Face Transformers",
+          "YOLOv8",
+          "Segment Anything"
+        ]
+      },
+      {
+        "Skill Category": "Cloud, DevOps & Infrastructure",
+        "Skills": [
+          "AWS",
+          "Google Cloud Platform (GCP)",
+          "Azure",
+          "Docker",
+          "Kubernetes",
+          "LLMOps",
+          "Scalable AI Deployment",
+          "REST APIs"
+        ]
+      },
+      {
+        "Skill Category": "Data & Backend Technologies",
+        "Skills": [
+          "FastAPI",
+          "Django",
+          "Flask",
+          "Node.js",
+          "Pandas",
+          "Numpy",
+          "Matplotlib",
+          "Data Cleaning"
+        ]
+      },
+      {
+        "Skill Category": "Vector Databases & Tooling",
+        "Skills": [
+          "Weaviate",
+          "Chroma",
+          "FAISS",
+          "Supabase (pgvector)",
+          "Tesseract OCR",
+          "PDF Parsing",
+          "NoSQL"
+        ]
+      },
+      {
+        "Skill Category": "Domain Expertise & Certifications",
+        "Skills": [
+          "Contract Intelligence (Legal/Finance)",
+          "FinTech Analysis (FinBERT)",
+          "Smart Surveillance Systems",
+          "Developer Productivity Tools (Code RAG)",
+          "Google Solutions Architect (Associate Certification)",
+          "TensorFlow Developer (Certification)",
+          "Deep Learning Specialization (Certification)"
+        ]
+      }
+    ],
+    "extraction_date": "2025-10-06T18:22:07.442922"
+  },
+  {
+    "user_id": 19,
+    "user_name": "Aryan Acharya",
+    "skills_data": [
+      {
+        "Skill Category": "Programming Languages",
+        "Skills": [
+          "Python",
+          "JavaScript",
+          "Java",
+          "C++"
+        ]
+      },
+      {
+        "Skill Category": "Technical Skills & Concepts",
+        "Skills": [
+          "Machine Learning",
+          "Natural Language Processing (NLP)",
+          "Computer Vision (CV)",
+          "Deep Learning",
+          "Retrieval-Augmented Generation (RAG)",
+          "Multi-Agent Systems",
+          "Prompt Engineering",
+          "LLMOps",
+          "Neural Networks",
+          "Supervised Learning"
+        ]
+      },
+      {
+        "Skill Category": "Frameworks & AI Tooling",
+        "Skills": [
+          "TensorFlow",
+          "PyTorch",
+          "LangChain",
+          "LlamaIndex",
+          "OpenCV",
+          "YOLOv8",
+          "Hugging Face Transformers",
+          "GPT-4 (and variants)",
+          "Tesseract OCR",
+          "Scikit-learn"
+        ]
+      },
+      {
+        "Skill Category": "Cloud & Infrastructure",
+        "Skills": [
+          "AWS (Amazon Web Services)",
+          "Google Cloud Platform (GCP)",
+          "Docker",
+          "Kubernetes",
+          "FastAPI",
+          "REST API Development",
+          "Scalable AI Deployment",
+          "Backend Development (Flask/Django)",
+          "Azure",
+          "NoSQL"
+        ]
+      },
+      {
+        "Skill Category": "Data Engineering & Databases",
+        "Skills": [
+          "Pandas",
+          "Numpy",
+          "Data Cleaning",
+          "PDF Parsing",
+          "Vector Databases (Weaviate/Chroma/FAISS)",
+          "Matplotlib",
+          "Seaborn",
+          "OpenAI Embeddings"
+        ]
+      },
+      {
+        "Skill Category": "Domain Expertise & Certifications",
+        "Skills": [
+          "Google Solutions Architect Certification",
+          "TensorFlow Developer Certification",
+          "Financial AI Automation (FinBERT)",
+          "Legal Tech Automation (Contract Intelligence)",
+          "Developer Productivity (Code RAG)",
+          "Smart Surveillance Systems",
+          "Real-time System Development",
+          "Multimodal AI Integration"
+        ]
+      }
+    ],
+    "extraction_date": "2025-10-06T18:28:17.933955"
+  },
+  {
+    "user_id": 20,
+    "user_name": "Aryan Acharya",
+    "skills_data": [
+      {
+        "Skill Category": "Programming Languages",
+        "Skills": [
+          "Python",
+          "JavaScript",
+          "Java",
+          "C++"
+        ]
+      },
+      {
+        "Skill Category": "Technical Skills",
+        "Skills": [
+          "Machine Learning (ML)",
+          "Natural Language Processing (NLP)",
+          "Computer Vision (CV)",
+          "Deep Learning",
+          "Retrieval-Augmented Generation (RAG)",
+          "Prompt Engineering",
+          "LLMOps",
+          "Multi-Agent Systems",
+          "Object Detection",
+          "Data Cleaning"
+        ]
+      },
+      {
+        "Skill Category": "Frameworks & Tools",
+        "Skills": [
+          "TensorFlow",
+          "PyTorch",
+          "LangChain",
+          "LlamaIndex",
+          "YOLOv8",
+          "OpenCV",
+          "Docker",
+          "FastAPI",
+          "Weaviate (Vector Database)",
+          "Pandas"
+        ]
+      },
+      {
+        "Skill Category": "Soft Skills",
+        "Skills": [
+          "Solution Development",
+          "Problem Solving",
+          "Technical Communication (English)",
+          "Cross-functional Collaboration",
+          "Scalability Engineering",
+          "Adaptability",
+          "Code Refactoring"
+        ]
+      },
+      {
+        "Skill Category": "Domain Expertise & Certifications",
+        "Skills": [
+          "AI Engineering",
+          "Cloud Computing",
+          "Financial Analysis",
+          "Legal Tech (Contract Intelligence)",
+          "Smart Surveillance",
+          "Google Solutions Architect - Associate",
+          "TensorFlow Developer",
+          "Deep Learning Specialization"
+        ]
+      },
+      {
+        "Skill Category": "Cloud & DevOps",
+        "Skills": [
+          "AWS",
+          "Google Cloud Platform (GCP)",
+          "Azure",
+          "Kubernetes",
+          "Docker",
+          "REST APIs",
+          "NoSQL",
+          "LLMOps"
+        ]
+      }
+    ],
+    "extraction_date": "2025-10-06T18:29:09.092057"
+  },
+  {
+    "user_id": 21,
+    "user_name": "Aryan Acharya",
+    "skills_data": [
+      {
+        "Skill Category": "Programming Languages",
+        "Skills": [
+          "Python",
+          "JavaScript",
+          "Java",
+          "C++"
+        ]
+      },
+      {
+        "Skill Category": "AI & Deep Learning",
+        "Skills": [
+          "Machine Learning",
+          "Deep Learning",
+          "Computer Vision (CV)",
+          "Natural Language Processing (NLP)",
+          "Object Detection (YOLOv5/YOLOv8)",
+          "Neural Networks",
+          "Supervised Learning",
+          "Multimodal AI"
+        ]
+      },
+      {
+        "Skill Category": "LLM & RAG Engineering",
+        "Skills": [
+          "Retrieval-Augmented Generation (RAG)",
+          "Prompt Engineering",
+          "Multi-Agent Systems",
+          "LangChain",
+          "LlamaIndex",
+          "LangGraph",
+          "AutoGen",
+          "Text Generation"
+        ]
+      },
+      {
+        "Skill Category": "Frameworks & Tools",
+        "Skills": [
+          "TensorFlow",
+          "PyTorch",
+          "OpenCV",
+          "Hugging Face Transformers",
+          "Scikit-learn",
+          "Keras",
+          "Segment Anything",
+          "Tesseract OCR"
+        ]
+      },
+      {
+        "Skill Category": "Cloud & MLOps/DevOps",
+        "Skills": [
+          "AWS",
+          "Google Cloud Platform (GCP)",
+          "Azure",
+          "Docker",
+          "LLMOps",
+          "Kubernetes",
+          "REST APIs",
+          "Scalable AI Deployment"
+        ]
+      },
+      {
+        "Skill Category": "Data & Backend Development",
+        "Skills": [
+          "Vector Databases (Weaviate, Chroma, FAISS)",
+          "Data Processing (Pandas, Numpy)",
+          "FastAPI",
+          "Flask / Django",
+          "NoSQL",
+          "Data Visualization (Matplotlib, Seaborn)",
+          "PDF Parsing"
+        ]
+      },
+      {
+        "Skill Category": "Domain Expertise & Certifications",
+        "Skills": [
+          "Google Solutions Architect - Associate",
+          "TensorFlow Developer Certification",
+          "Contract Intelligence / Legal Tech",
+          "Financial Analysis & Audit",
+          "Real-time AI Solutions",
+          "Code Refactoring & Developer Productivity",
+          "Workplace Safety Monitoring"
+        ]
+      }
+    ],
+    "extraction_date": "2025-10-06T18:38:59.418206"
+  },
+  {
+    "user_id": 22,
+    "user_name": "Aryan Acharya",
+    "skills_data": [
+      {
+        "Skill Category": "Programming Languages",
+        "Skills": [
+          "Python",
+          "JavaScript",
+          "Java",
+          "C++"
+        ]
+      },
+      {
+        "Skill Category": "Technical Skills",
+        "Skills": [
+          "AI Engineering",
+          "Machine Learning",
+          "Natural Language Processing (NLP)",
+          "Computer Vision (CV)",
+          "Retrieval-Augmented Generation (RAG)",
+          "LLMOps",
+          "Prompt Engineering",
+          "Multi-Agent Systems",
+          "Scalable System Design",
+          "Predictive Modeling"
+        ]
+      },
+      {
+        "Skill Category": "Frameworks & Tools",
+        "Skills": [
+          "TensorFlow",
+          "PyTorch",
+          "LangChain",
+          "LlamaIndex",
+          "OpenCV",
+          "YOLOv8",
+          "Docker",
+          "AWS",
+          "Google Cloud Platform (GCP)",
+          "FastAPI"
+        ]
+      },
+      {
+        "Skill Category": "Soft Skills",
+        "Skills": [
+          "Solution Architecture",
+          "Problem Solving",
+          "Technical Communication",
+          "Adaptability",
+          "Cross-Functional Collaboration (Implied from specialized AI Copilots)",
+          "Data Visualization (Matplotlib, Seaborn)"
+        ]
+      },
+      {
+        "Skill Category": "Domain Expertise & Certifications",
+        "Skills": [
+          "Google Solutions Architect (Associate)",
+          "Deep Learning",
+          "Legal Technology & Contract Intelligence",
+          "Financial Analysis & Audit",
+          "Workplace Safety Systems",
+          "Codebase Understanding & Refactoring",
+          "Cloud Computing",
+          "Data Structures"
+        ]
+      }
+    ],
+    "extraction_date": "2025-10-06T18:45:27.898860"
   }
 ]

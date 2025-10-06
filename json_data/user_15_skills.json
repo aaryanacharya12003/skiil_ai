@@ -1,0 +1,68 @@
+[
+  {
+    "Skill Category": "Programming Languages",
+    "Skills": [
+      "Python",
+      "JavaScript",
+      "Java",
+      "C++"
+    ]
+  },
+  {
+    "Skill Category": "Technical Skills",
+    "Skills": [
+      "Artificial Intelligence Engineering",
+      "Machine Learning Development",
+      "Deep Learning Architectures",
+      "Computer Vision",
+      "Natural Language Processing (NLP)",
+      "Retrieval-Augmented Generation (RAG)",
+      "Prompt Engineering",
+      "Real-time AI Solutions",
+      "Scalable System Design",
+      "Data Structures & Algorithms"
+    ]
+  },
+  {
+    "Skill Category": "Frameworks & Tools",
+    "Skills": [
+      "TensorFlow",
+      "PyTorch",
+      "LangChain",
+      "LlamaIndex",
+      "Docker",
+      "AWS",
+      "Google Cloud Platform (GCP)",
+      "FastAPI",
+      "GPT-4",
+      "Hugging Face Transformers"
+    ]
+  },
+  {
+    "Skill Category": "Soft Skills",
+    "Skills": [
+      "Analytical Thinking",
+      "Problem Solving",
+      "Technical Communication",
+      "Collaboration",
+      "Innovation",
+      "Solution Design",
+      "Adaptability"
+    ]
+  },
+  {
+    "Skill Category": "Domain Expertise & Certifications",
+    "Skills": [
+      "AI Engineering",
+      "Machine Learning Engineering",
+      "Cloud Architecture",
+      "Deep Learning",
+      "Legal Technology",
+      "Financial Technology",
+      "Smart Surveillance",
+      "Knowledge Management",
+      "Developer Productivity",
+      "Multilingual Proficiency"
+    ]
+  }
+]
