@@ -50,29 +50,21 @@ app.config['GEMINI_API_KEY'] = os.getenv('GEMINI_API_KEY')
 
 # Configure Gemini API with better error handling
 model = None
+MODEL_NAME = 'gemini-flash-latest'  # Using flash latest model (closest to 1.5 flash)
 if GEMINI_AVAILABLE and app.config['GEMINI_API_KEY']:
     try:
         genai.configure(api_key=app.config['GEMINI_API_KEY'])
         
-        # Try gemini-1.5-flash first (as requested)
+        # Use gemini-flash-latest (closest to 1.5 flash functionality)
         try:
-            model = genai.GenerativeModel('gemini-1.5-flash')
+            model = genai.GenerativeModel(MODEL_NAME)
             # Test the model with a simple prompt to verify it's working
             test_response = model.generate_content("Say 'Hello' to test the API connection.")
-            logger.info("Gemini API configured successfully with model 'gemini-1.5-flash'!")
+            logger.info(f"Gemini API configured successfully with model '{MODEL_NAME}'!")
             logger.info(f"Test response: {test_response.text[:50]}...")
         except Exception as e:
-            logger.warning(f"Failed to configure Gemini API with 'gemini-1.5-flash'. Error: {e}")
-            logger.info("Trying 'gemini-pro' as fallback...")
-            
-            try:
-                model = genai.GenerativeModel('gemini-pro')
-                test_response = model.generate_content("Say 'Hello' to test the API connection.")
-                logger.info("Successfully configured with 'gemini-pro' as a fallback.")
-                logger.info(f"Test response: {test_response.text[:50]}...")
-            except Exception as e2:
-                logger.error(f"Failed to configure Gemini API with 'gemini-pro' as well. Error: {e2}")
-                model = None
+            logger.error(f"Failed to configure Gemini API with '{MODEL_NAME}'. Error: {e}")
+            model = None
                 
     except Exception as e:
         logger.error(f"Failed to configure Gemini API: {e}")
@@ -429,9 +421,10 @@ def status():
     return jsonify({
         'gemini_available': GEMINI_AVAILABLE,
         'model_configured': model is not None,
+        'model_name': MODEL_NAME if model else None,
         'pdf_support': PDF_AVAILABLE,
         'docx_support': DOCX_AVAILABLE,
-        'model_name': 'gemini-1.5-flash' if model else None
+        'skill_gap_analysis': True
     })
 
 @app.route('/upload', methods=['POST'])
@@ -521,7 +514,7 @@ def upload():
 
 @app.route('/recommendations/<int:user_id>')
 def recommendations(user_id):
-    """Get project recommendations for a user"""
+    """Get project recommendations for a user with skill gap analysis"""
     try:
         # Load user data
         users = load_json_data('users.json')
@@ -545,11 +538,11 @@ def recommendations(user_id):
         if not projects:
             return jsonify({'error': 'No projects available'}), 404
         
-        # AI-powered matching with Gemini
+        # AI-powered matching with skills gap analysis using Gemini
         matched = []
         if model:
             try:
-                logger.info(f"Generating AI recommendations for user {user_id}")
+                logger.info(f"Generating AI recommendations with skill gap analysis for user {user_id}")
                 
                 # Create detailed project descriptions for AI
                 project_details = []
@@ -558,82 +551,136 @@ def recommendations(user_id):
                     project_details.append(f"ID: {proj['id']}\nProject: {proj['name']}\nDescription: {proj['description']}\nRequired Skills: {skills_str}")
                 
                 prompt = f"""
-                You are an expert project manager and career advisor. Match the most suitable projects for this candidate.
+                You are an expert career advisor and technical mentor. Analyze the candidate's skills and provide comprehensive project recommendations with detailed skill gap analysis.
                 
                 CANDIDATE PROFILE:
                 - Name: {user['name']}
                 - Experience Level: {user['experience_level']}
-                - Skills: {', '.join(user_skills)}
+                - Current Skills: {', '.join(user_skills)}
                 
                 AVAILABLE PROJECTS:
                 {chr(10).join(project_details)}
                 
-                TASK: Analyze the candidate's skills and experience level, then recommend the TOP 4-6 most suitable projects.
+                TASK: 
+                1. Recommend the TOP 4-6 most suitable projects based on skill match and career growth potential
+                2. For each recommended project, provide detailed skill gap analysis
+                3. Suggest specific skills to improve and learn
+                4. Provide learning recommendations and next steps
                 
                 Consider:
-                1. Skill match percentage (how many required skills the candidate has)
-                2. Experience level appropriateness (Junior vs Mid vs Senior projects)
-                3. Growth opportunities (projects that can help develop new skills)
-                4. Complexity match (don't overwhelm juniors, don't bore seniors)
-                5. Career progression potential
+                - Current skill match percentage
+                - Experience level appropriateness
+                - Skills that are missing but learnable
+                - Career progression opportunities
+                - Growth potential and learning curve
                 
-                Return ONLY a JSON array with project IDs and match details:
+                Return ONLY a valid JSON array with this exact structure (no additional text or formatting):
                 [
-                    {{"project_id": 1, "match_score": 95, "reasons": ["Strong Python skills match", "Perfect for ML experience level", "Great growth opportunity"]}},
-                    {{"project_id": 2, "match_score": 87, "reasons": ["Good skill overlap", "Matches experience level"]}}
+                    {{
+                        "project_id": 1,
+                        "match_score": 85,
+                        "matching_skills": ["Python", "API Development"],
+                        "missing_skills": ["Docker", "Kubernetes"],
+                        "skills_to_improve": ["Advanced Python", "System Design"],
+                        "learning_recommendations": [
+                            "Complete Docker fundamentals course",
+                            "Practice Kubernetes basics with minikube",
+                            "Build 2-3 microservices projects"
+                        ],
+                        "difficulty_level": "Intermediate",
+                        "estimated_learning_time": "2-3 months",
+                        "why_recommended": "Perfect next step to advance your backend development skills",
+                        "career_benefits": ["DevOps skills", "Cloud-native development", "Scalable architecture"]
+                    }}
                 ]
                 
-                Sort by match_score (highest first). Include exact project_id numbers, match_score (0-100), and specific reasons.
+                IMPORTANT: Return ONLY the JSON array, no other text. Use project_id numbers from the available projects list above.
                 """
                 
                 response = model.generate_content(prompt)
                 response_text = response.text.strip()
                 
-                # Clean response
+                logger.info(f"Raw AI response: {response_text[:200]}...")
+                
+                # Clean the response to extract only JSON
                 if '```json' in response_text:
                     response_text = response_text.split('```json')[1].split('```')[0].strip()
                 elif '```' in response_text:
                     response_text = response_text.split('```')[1].split('```')[0].strip()
                 
-                ai_recommendations = json.loads(response_text)
+                # Remove any leading/trailing text that's not JSON
+                start_idx = response_text.find('[')
+                end_idx = response_text.rfind(']')
+                if start_idx != -1 and end_idx != -1:
+                    response_text = response_text[start_idx:end_idx+1]
+                
+                logger.info(f"Cleaned JSON: {response_text[:200]}...")
+                
+                try:
+                    ai_recommendations = json.loads(response_text)
+                    logger.info(f"Successfully parsed {len(ai_recommendations)} AI recommendations")
+                except json.JSONDecodeError as e:
+                    logger.error(f"JSON parsing failed: {e}")
+                    logger.error(f"Problematic JSON: {response_text}")
+                    ai_recommendations = []
                 
                 # Match AI recommendations with actual projects
-                for ai_rec in ai_recommendations:
-                    project_id = ai_rec.get('project_id')
-                    project = next((p for p in projects if p['id'] == project_id), None)
+                if ai_recommendations:
+                    for ai_rec in ai_recommendations:
+                        project_id = ai_rec.get('project_id')
+                        project = next((p for p in projects if p['id'] == project_id), None)
+                        
+                        if project:
+                            # Enhanced project data with skill gap analysis
+                            enhanced_project = {
+                                'id': project['id'],
+                                'name': project['name'],
+                                'description': project['description'],
+                                'required_skills': project['required_skills'],
+                                'match_score': ai_rec.get('match_score', 0),
+                                'matching_skills': ai_rec.get('matching_skills', []),
+                                'missing_skills': ai_rec.get('missing_skills', []),
+                                'skills_to_improve': ai_rec.get('skills_to_improve', []),
+                                'learning_recommendations': ai_rec.get('learning_recommendations', []),
+                                'difficulty_level': ai_rec.get('difficulty_level', 'Unknown'),
+                                'estimated_learning_time': ai_rec.get('estimated_learning_time', 'Unknown'),
+                                'why_recommended': ai_rec.get('why_recommended', ''),
+                                'career_benefits': ai_rec.get('career_benefits', [])
+                            }
+                            matched.append(enhanced_project)
                     
-                    if project:
-                        matched.append({
-                            'id': project['id'],
-                            'name': project['name'],
-                            'description': project['description'],
-                            'required_skills': project['required_skills'],
-                            'match_score': ai_rec.get('match_score', 0),
-                            'ai_reasons': ai_rec.get('reasons', [])
-                        })
-                
-                if matched:
-                    matched.sort(key=lambda x: x.get('match_score', 0), reverse=True)
-                    logger.info(f"Generated {len(matched)} AI recommendations")
+                    if matched:
+                        matched.sort(key=lambda x: x.get('match_score', 0), reverse=True)
+                        logger.info(f"Generated {len(matched)} AI recommendations with skill gap analysis")
                 
             except Exception as e:
                 logger.error(f"AI recommendation error: {e}")
                 matched = []
         
-        # Enhanced fallback matching with scoring
+        # Enhanced fallback matching with basic skill gap analysis
         if not matched:
-            logger.info("Using fallback recommendation algorithm")
+            logger.info("Using fallback recommendation algorithm with basic skill gap analysis")
             scored_projects = []
             for proj in projects:
-                required = [s.strip().lower() for s in proj['required_skills']]
-                user_skills_lower = [s.lower() for s in user_skills]
+                # Identify matching and missing skills
+                matching_skills = []
+                missing_skills = []
+                
+                for req_skill in proj['required_skills']:
+                    req_lower = req_skill.lower().strip()
+                    is_match = any(user_skill.lower() in req_lower or req_lower in user_skill.lower() 
+                                 for user_skill in user_skills)
+                    if is_match:
+                        matching_skills.append(req_skill)
+                    else:
+                        missing_skills.append(req_skill)
                 
                 # Calculate match score
-                skill_matches = sum(1 for skill in required if any(user_skill in skill or skill in user_skill for user_skill in user_skills_lower))
-                total_required = len(required)
+                match_count = len(matching_skills)
+                total_required = len(proj['required_skills'])
                 
                 if total_required > 0:
-                    match_percentage = (skill_matches / total_required) * 100
+                    match_percentage = (match_count / total_required) * 100
                 else:
                     match_percentage = 0
                 
@@ -649,23 +696,42 @@ def recommendations(user_id):
                 
                 final_score = min(match_percentage + experience_bonus, 100)
                 
-                if skill_matches > 0:  # Only include projects with some skill match
+                if match_count > 0 or len(missing_skills) <= 4:  # Include projects with some skills or few missing skills
+                    # Basic learning recommendations
+                    basic_recommendations = []
+                    if missing_skills:
+                        basic_recommendations.extend([f"Learn {skill}" for skill in missing_skills[:3]])
+                    if len(matching_skills) > 0:
+                        basic_recommendations.append(f"Strengthen your {matching_skills[0]} skills")
+                    
+                    # Skills to improve (existing skills that could be enhanced)
+                    skills_to_improve = []
+                    for match_skill in matching_skills[:2]:
+                        skills_to_improve.append(f"Advanced {match_skill}")
+                    
                     scored_projects.append({
                         'id': proj['id'],
                         'name': proj['name'],
                         'description': proj['description'],
                         'required_skills': proj['required_skills'],
                         'match_score': round(final_score, 1),
-                        'skill_matches': skill_matches,
-                        'total_required': total_required,
-                        'fallback_reasons': [f"Matches {skill_matches}/{total_required} required skills", f"Suitable for {user['experience_level']} level"]
+                        'matching_skills': matching_skills,
+                        'missing_skills': missing_skills,
+                        'skills_to_improve': skills_to_improve,
+                        'learning_recommendations': basic_recommendations,
+                        'difficulty_level': f'Suitable for {user["experience_level"]} level',
+                        'estimated_learning_time': f"{len(missing_skills) * 2}-{len(missing_skills) * 4} weeks" if missing_skills else "Ready to start",
+                        'why_recommended': f"Matches {match_count}/{total_required} required skills. Good for skill development.",
+                        'career_benefits': ['Skill development', 'Project experience', 'Portfolio building']
                     })
             
             # Sort by score and take top matches
             scored_projects.sort(key=lambda x: x['match_score'], reverse=True)
             matched = scored_projects[:6]
+            
+            logger.info(f"Generated {len(matched)} fallback recommendations with skill gap analysis")
         
-        logger.info(f"Returning {len(matched)} recommendations for user {user_id}")
+        logger.info(f"Returning {len(matched)} recommendations with skill gap analysis for user {user_id}")
         
         return jsonify({
             'user': user,
@@ -673,7 +739,8 @@ def recommendations(user_id):
             'user_skills_categories': user_skills_data,
             'recommendations': matched,
             'total_skills': len(user_skills),
-            'ai_powered': model is not None
+            'ai_powered': model is not None,
+            'skill_gap_analysis': True
         })
         
     except Exception as e:
@@ -731,9 +798,10 @@ if __name__ == '__main__':
     print(f"Gemini API Available: {GEMINI_AVAILABLE}")
     print(f"Model Configured: {model is not None}")
     if model:
-        print(f"Model: gemini-1.5-flash")
+        print(f"Model: {MODEL_NAME}")
     print(f"PDF Support: {PDF_AVAILABLE}")
     print(f"DOCX Support: {DOCX_AVAILABLE}")
+    print(f"Skill Gap Analysis: Enabled")
     print("="*50)
     
     app.run(debug=True, host='0.0.0.0', port=5000)

@@ -174,5 +174,21 @@
     "experience_level": "Mid",
     "upload_date": "2025-10-06T18:45:27.898860",
     "cv_filename": "Aryans_Cv_1.pdf"
+  },
+  {
+    "id": 23,
+    "name": "Aryan Acharya",
+    "email": "aryanacharya12003@gmail.com",
+    "experience_level": "Mid",
+    "upload_date": "2025-10-06T23:38:28.526750",
+    "cv_filename": "Aryans_Cv_1.pdf"
+  },
+  {
+    "id": 24,
+    "name": "Aryan Anandprakash Acharya",
+    "email": "aryanacharya12003@gmail.com",
+    "experience_level": "Mid",
+    "upload_date": "2025-10-06T23:39:56.405304",
+    "cv_filename": "Aryans_Cv_1.pdf"
   }
 ]

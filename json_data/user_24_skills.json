@@ -1,0 +1,45 @@
+[
+  {
+    "Skill Category": "Technical Skills",
+    "Skills": [
+      "Numpy",
+      "Kubernetes",
+      "Python",
+      "Machine Learning",
+      "Java",
+      "Gcp",
+      "Azure",
+      "Docker",
+      "Django",
+      "Javascript"
+    ]
+  },
+  {
+    "Skill Category": "Programming Languages",
+    "Skills": [
+      "Javascript",
+      "Python",
+      "Java"
+    ]
+  },
+  {
+    "Skill Category": "Frameworks & Tools",
+    "Skills": [
+      "Numpy",
+      "Kubernetes",
+      "Docker",
+      "Django",
+      "Scikit-Learn",
+      "Pytorch",
+      "Pandas",
+      "Tensorflow",
+      "Flask"
+    ]
+  },
+  {
+    "Skill Category": "Soft Skills",
+    "Skills": [
+      "Creative"
+    ]
+  }
+]

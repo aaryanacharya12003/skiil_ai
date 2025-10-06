@@ -1390,5 +1390,105 @@
       }
     ],
     "extraction_date": "2025-10-06T18:45:27.898860"
+  },
+  {
+    "user_id": 23,
+    "user_name": "Aryan Acharya",
+    "skills_data": [
+      {
+        "Skill Category": "Technical Skills",
+        "Skills": [
+          "Pytorch",
+          "Gcp",
+          "Javascript",
+          "Aws",
+          "Deep Learning",
+          "Azure",
+          "Machine Learning",
+          "Java",
+          "Tensorflow",
+          "Python"
+        ]
+      },
+      {
+        "Skill Category": "Programming Languages",
+        "Skills": [
+          "Python",
+          "Javascript",
+          "Java"
+        ]
+      },
+      {
+        "Skill Category": "Frameworks & Tools",
+        "Skills": [
+          "Pytorch",
+          "Tensorflow",
+          "Scikit-Learn",
+          "Docker",
+          "Django",
+          "Kubernetes",
+          "Numpy",
+          "Flask",
+          "Pandas"
+        ]
+      },
+      {
+        "Skill Category": "Soft Skills",
+        "Skills": [
+          "Creative"
+        ]
+      }
+    ],
+    "extraction_date": "2025-10-06T23:38:28.530749"
+  },
+  {
+    "user_id": 24,
+    "user_name": "Aryan Anandprakash Acharya",
+    "skills_data": [
+      {
+        "Skill Category": "Technical Skills",
+        "Skills": [
+          "Numpy",
+          "Kubernetes",
+          "Python",
+          "Machine Learning",
+          "Java",
+          "Gcp",
+          "Azure",
+          "Docker",
+          "Django",
+          "Javascript"
+        ]
+      },
+      {
+        "Skill Category": "Programming Languages",
+        "Skills": [
+          "Javascript",
+          "Python",
+          "Java"
+        ]
+      },
+      {
+        "Skill Category": "Frameworks & Tools",
+        "Skills": [
+          "Numpy",
+          "Kubernetes",
+          "Docker",
+          "Django",
+          "Scikit-Learn",
+          "Pytorch",
+          "Pandas",
+          "Tensorflow",
+          "Flask"
+        ]
+      },
+      {
+        "Skill Category": "Soft Skills",
+        "Skills": [
+          "Creative"
+        ]
+      }
+    ],
+    "extraction_date": "2025-10-06T23:39:56.408313"
   }
 ]
