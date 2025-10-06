@@ -3,48 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learning & Development Agent</title>
+    <title>CV Skills Analyzer</title>
     <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Learning & Development Agent</h1>
-        <p>Upload your CV to extract skills and get AI-powered project recommendations!</p>
-        
-        <form id="cvForm" enctype="multipart/form-data">
-            <div class="form-group">
-                <label>Name: <input type="text" name="name" required></label>
-            </div>
-            <div class="form-group">
-                <label>Email: <input type="email" name="email" required></label>
-            </div>
-            <div class="form-group">
-                <label>Experience Level:
-                    <select name="experience_level" required>
-                        <option value="Junior">Junior (0-2 years)</option>
-                        <option value="Mid">Mid (2-5 years)</option>
-                        <option value="Senior">Senior (5+ years)</option>
-                    </select>
-                </label>
-            </div>
-            <div class="form-group">
-                <label>Upload CV (PDF or DOCX):
-                    <input type="file" name="cv_file" accept=".pdf,.doc,.docx" required>
-                </label>
-            </div>
-            <button type="submit">Upload & Extract Skills</button>
+    <header class="header">
+        <h1>CV Skills Analyzer</h1>
+        <p>Analyze your CV and discover matching project opportunities</p>
+    </header>
+
+    <div id="main-center">
+        <section class="section">
+            <h2 class="section-title">Upload Your CV</h2>
+            <form id="cvForm" enctype="multipart/form-data">
+            <label>
+                <span>Name</span>
+                <input type="text" name="name" required placeholder="Enter your full name">
+            </label>
+            <label>
+                <span>Email</span>
+                <input type="email" name="email" required placeholder="Enter your email">
+            </label>
+            <label>
+                <span>Experience Level</span>
+                <select name="experience_level" required>
+                    <option value="" disabled selected>Select your experience level</option>
+                    <option value="Junior">Junior</option>
+                    <option value="Mid">Mid</option>
+                    <option value="Senior">Senior</option>
+                </select>
+            </label>
+            <label>
+                <span>Upload CV</span>
+                <input type="file" name="cv_file" accept=".pdf,.doc,.docx" required>
+            </label>
+            <button type="submit">Analyze CV</button>
         </form>
-        
-        <div id="loading" style="display: none;">
-            <p>Processing your CV and finding matches...</p>
+        </section>
+
+        <div id="loading" style="display:none;" class="section">
+            <div class="loading-content">
+                <h3>Analyzing Your CV</h3>
+                <p>Please wait while we process your information...</p>
+            </div>
         </div>
-        
-        <div id="results" style="display: none;">
-            <h2>Extracted Skills</h2>
-            <div id="skills"></div>
-            
-            <h2>Recommended Projects</h2>
-            <div id="recommendations"></div>
+
+        <div id="results" style="display:none;">
+            <section class="section">
+                <h2 class="section-title">Your Skills Profile</h2>
+                <div id="skills"></div>
+            </section>
+
+            <section class="section">
+                <h2 class="section-title">Recommended Projects</h2>
+                <div id="recommendations"></div>
+            </section>
         </div>
     </div>
 
@@ -69,60 +82,33 @@
                     const result = await resp.json();
                     currentUserId = result.user_id;
                     
-                    // Display skills
+                    // Display skills as categories
                     const skillsDiv = document.getElementById('skills');
                     skillsDiv.innerHTML = result.skills.map(cat => 
                         `<div class="skill-category">
                             <h3>${cat['Skill Category']}</h3>
-                            <div class="skills-list">
-                                ${cat.Skills.map(skill => `<span class="skill-tag">${skill}</span>`).join('')}
-                            </div>
+                            <p>${cat.Skills.join(', ')}</p>
                         </div>`
                     ).join('');
-                    
+
                     // Fetch recommendations
                     const recResp = await fetch(`/recommendations/${currentUserId}`);
                     if (recResp.ok) {
                         const recData = await recResp.json();
-                        
-                        // Display recommendations with match scores
                         const recsDiv = document.getElementById('recommendations');
                         if (recData.recommendations.length > 0) {
-                            recsDiv.innerHTML = recData.recommendations.map(proj => {
-                                let matchInfo = '';
-                                if (proj.match_score) {
-                                    matchInfo = `<div class="match-score">Match Score: ${proj.match_score}%</div>`;
-                                }
-                                
-                                let aiReasons = '';
-                                if (proj.ai_reasons && proj.ai_reasons.length > 0) {
-                                    aiReasons = `
-                                        <div class="ai-reasons">
-                                            <strong>AI Recommendations:</strong>
-                                            <ul>
-                                                ${proj.ai_reasons.map(reason => `<li>${reason}</li>`).join('')}
-                                            </ul>
-                                        </div>
-                                    `;
-                                }
-                                
-                                return `<div class="project-card">
-                                    <div class="project-header">
-                                        <h3>${proj.name}</h3>
-                                        ${matchInfo}
-                                    </div>
+                            recsDiv.innerHTML = recData.recommendations.map(proj =>
+                                `<div class="project-card">
+                                    <h3>${proj.name} ${proj.match_score ? `<span style="color: #007bff">(${proj.match_score}% match)</span>` : ''}</h3>
                                     <p>${proj.description}</p>
-                                    ${aiReasons}
-                                    <div class="required-skills">
-                                        <strong>Required Skills:</strong>
-                                        <div class="skills-list">
-                                            ${proj.required_skills.map(skill => `<span class="skill-tag">${skill.trim()}</span>`).join('')}
-                                        </div>
-                                    </div>
-                                </div>`;
-                            }).join('');
+                                    <p><strong>Required Skills:</strong> ${proj.required_skills.join(', ')}</p>
+                                    ${proj.missing_skills ? 
+                                        `<p><strong>Skills to Develop:</strong> ${proj.missing_skills.join(', ')}</p>` 
+                                        : ''}
+                                </div>`
+                            ).join('');
                         } else {
-                            recsDiv.innerHTML = '<p>No matching projects found. Upload your CV to get personalized recommendations!</p>';
+                            recsDiv.innerHTML = '<div class="project-card">No matching projects found.</div>';
                         }
                     }
                     
